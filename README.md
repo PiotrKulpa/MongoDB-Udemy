@@ -33,3 +33,8 @@ In queries folder are examples of queries used in course.
 -   How to use the serverless platform (Stitch) offered by MongoDB
     
 -   And much more!
+
+# Basic shell commands:
+-    ```show dbs``` shows all databases
+-    ```use [db name]``` switches to db
+
