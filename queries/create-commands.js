@@ -6,6 +6,6 @@ db.products.insertOne({name: "Computer", price: 1220.99, description: "This is h
 
 db.flightData.insertOne({departureAirport: "TXL", arrivalAirport: "LHR"})
 
-db.flightData.insertOne({departureAirport: "TXL", arrivalAirport: "LHR", _id: "txl-lhr-1"})
+db.flightData.insertOne({departureAirport: "TXL", arrivalAirport: "LHR", _id: "txl-lhr-1"}) // with custom id
 
 db.flightData.insertOne({departureAirport: "MUC", arrivalAirport: "SFO", aircraft: "Airbus A380", distance: 1200, intercontinental: true})
