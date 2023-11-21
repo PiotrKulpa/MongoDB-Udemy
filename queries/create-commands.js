@@ -9,3 +9,22 @@ db.flightData.insertOne({departureAirport: "TXL", arrivalAirport: "LHR"})
 db.flightData.insertOne({departureAirport: "TXL", arrivalAirport: "LHR", _id: "txl-lhr-1"}) // with custom id
 
 db.flightData.insertOne({departureAirport: "MUC", arrivalAirport: "SFO", aircraft: "Airbus A380", distance: 1200, intercontinental: true})
+
+// insert many documents
+db.flightData.insertMany([
+   {
+     "departureAirport": "MUC",
+     "arrivalAirport": "SFO",
+     "aircraft": "Airbus A380",
+     "distance": 12000,
+     "intercontinental": true
+   },
+   {
+     "departureAirport": "LHR",
+     "arrivalAirport": "TXL",
+     "aircraft": "Airbus A320",
+     "distance": 950,
+     "intercontinental": false
+   }
+ ])
+
