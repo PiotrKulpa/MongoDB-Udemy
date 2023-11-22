@@ -37,4 +37,6 @@ In queries folder are examples of queries used in course.
 # Basic shell commands:
 -    ```show dbs``` shows all databases
 -    ```use [db name]``` switches to db
+-    ```db.dropDatabase()``` 1st switch to db then drop
+-    ```db.myCollection.drop()``` drop collection
 
