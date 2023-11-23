@@ -28,3 +28,11 @@ db.flightData.insertMany([
    }
  ])
 
+db.hobbies.insertMany([
+    {_id: "yoga", name: "Yoga"},
+    {_id: "cooking", name: "Cooking"},
+    {_id: "hiking", name: "Hiking"}
+], {ordered: false}) // ordered determins if insert will continue event if error 
+
+// importing data
+mongoimport --db movieData --collection movies --file tv-shows.json --jsonArray --drop
