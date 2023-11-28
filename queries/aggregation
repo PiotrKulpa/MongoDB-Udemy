@@ -1,0 +1,5 @@
+db. persons.aggregate([  
+{ $project: {_id: 0 , name: {$concat: ["$name.first", " ", "$name.last"] }, birthdate: {$toDate: "$dob.date" }} // set only name and birthdate
+{$sort: { birthdate: 1}},  
+{$limit: 10}  
+]).pretty();
